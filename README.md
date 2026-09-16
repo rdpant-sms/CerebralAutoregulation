@@ -31,7 +31,7 @@ R version: 4.5.0
 
 | Script | What it does |
 |------------------------------------|------------------------------------|
-| `config.R` | Paths, the model settings, and the I² switch |
+| `config.R` | Sets paths and the model settings|
 | `forest_lib.R` | Axis fitting, label columns, the shared `forest()` call |
 | `01_pool_odds_ratios.R` | `metagen()` per cell |
 | `02_pool_correlations.R` | `metacor()` per cell |
