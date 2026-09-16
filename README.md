@@ -7,6 +7,7 @@ Set working directory to code_meta/ and run the scripts in order 01 -> 07
 Inputs come from `../Data/study_data/effects_long.csv`. Outputs go to `../Data/meta_outputs/` (`meta_results.csv`, `corr_results.csv`) and `../Data/figures/`, Paths are defined once in `config.R`, which creates the directories if they are missing.
 
 R version: 4.5.0
+Requires R \>= 4.3 with `meta`
 
 ## Data organization
 ```         
@@ -41,7 +42,6 @@ R version: 4.5.0
 | `06_forest_sensitivity_corr.R` | Correlation forests, overlaps re-included |
 | `07_leave_one_out.R` | Sensitivity analysis to check robustness of results |
 
-Requires R \>= 4.3 with `meta`. Neither `metafor` nor the guide's companion package `dmetar` is used.
 
 ``` bash
 Rscript 01_pool_odds_ratios.R
