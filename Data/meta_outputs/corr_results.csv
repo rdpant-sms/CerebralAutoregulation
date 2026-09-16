@@ -1,0 +1,6 @@
+"analysis","target","outcome","metric","k","est","ci_low","ci_high","pi_low","pi_high","I2","I2_Q","I2_tau2","tau2","pval","Q","Q_pval"
+"primary","CPPopt","poor_outcome","pct_below",3,0.1478,-0.4653,0.6651,-0.7732,0.8683,84.04,79.1636,84.04,0.0533,0.4299,9.5986,0.0082
+"primary","CPPopt","poor_outcome","pct_within",5,-0.1265,-0.3798,0.1444,-0.5979,0.4099,82.8584,75.1331,82.8584,0.0326,0.2649,16.0856,0.0029
+"sensitivity_incl_overlap","CPPopt","poor_outcome","pct_below",5,0.0932,-0.1375,0.3142,-0.3243,0.4803,68.1784,62.1775,68.1784,0.0183,0.3257,10.5757,0.0318
+"sensitivity_incl_overlap","CPPopt","poor_outcome","pct_above",4,0.0868,0.0042,0.1682,-0.0365,0.2075,0,0,0,0,0.0442,1.3482,0.7177
+"sensitivity_incl_overlap","CPPopt","poor_outcome","pct_within",7,-0.1641,-0.3257,0.0069,-0.499,0.2134,73.8818,67.1097,73.8818,0.0202,0.0571,18.2424,0.0057

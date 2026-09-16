@@ -1,0 +1,54 @@
+﻿covidence_id,study_id,etiology,target,index,outcome,outcome_def,exposure_metric,stat_type,threshold,n_total,better_label,better_value,better_disp,better_disp_low,better_disp_high,worse_label,worse_value,worse_disp,worse_disp_low,worse_disp_high,direction
+51,Beqiri 2021,TBI,CPPopt,PRx,mortality,,deltaP,mean (SD),,813,Survivors,1.1,NR,,,Non-survivors,-1.73,NR,,,lower in worse-outcome group
+7,Beqiri 2023,TBI,CPPopt,PRx,mortality,,deltaP,median (IQR),,182,Survivors,0.4,-1.9 to 1.91,-1.9,1.91,Non-survivors,-2.14,-5.14 to 0.41,-5.14,0.41,lower in worse-outcome group
+69,Dias 2015,TBI,CPPopt,PRx,poor_outcome,Other: GOS < 3,deltaP,median (IQR),,18,Good Outcome,-1,IQR: 5.8,,,Poor Outcome,-6.6,IQR: 5.3,,,lower in worse-outcome group
+70,Gritti 2023,TBI,CPPopt,UL-PRx,mortality,,deltaP,median (IQR),,164,Survivors,1.2,-0.2 to 2.6,-0.2,2.6,Non-survivors,2.6,0.5 to 4.8,0.5,4.8,higher in worse-outcome group
+37,Gritti 2024,TBI,CPPopt,PRx,mortality,,Popt,median (IQR),,263,Survivors,71.24,66.02 to 77.41,66.02,77.41,Non-survivors,72.8,64.24 to 77.78,64.24,77.78,higher in worse-outcome group
+37,Gritti 2024,TBI,CPPopt,PRx,mortality,,deltaP,median (IQR),,263,Survivors,0.92,-0.09 to 2.57,-0.09,2.57,Non-survivors,2.13,0.50 to 4.09,0.50,4.09,higher in worse-outcome group
+37,Gritti 2024,TBI,CPPopt,PRx,mortality,,pct_below,median (IQR),-5,263,Survivors,36.28,28.51 to 42.22,28.51,42.22,Non-survivors,38.67,31.96 to 53.29,31.96,53.29,higher in worse-outcome group
+37,Gritti 2024,TBI,CPPopt,PRx,mortality,,pct_above,median (IQR),5,263,Survivors,25.66,18.59 to 31.15,18.59,31.15,Non-survivors,23.78,10.64 to 30.24,10.64,30.24,lower in worse-outcome group
+37,Gritti 2024,TBI,CPPopt,PRx,poor_outcome,GOSe <=4,Popt,median (IQR),,263,Good Outcome,70.21,65.97 to 75.43,65.97,75.43,Poor Outcome,72.31,65.76 to 78.80,65.76,78.80,higher in worse-outcome group
+37,Gritti 2024,TBI,CPPopt,PRx,poor_outcome,GOSe <=4,deltaP,median (IQR),,263,Good Outcome,0.77,-0.29 to 2.47,-0.29,2.47,Poor Outcome,1.39,0.24 to 3.32,0.24,3.32,higher in worse-outcome group
+37,Gritti 2024,TBI,CPPopt,PRx,poor_outcome,GOSe <=4,pct_below,median (IQR),-5,263,Good Outcome,36,27.89 to 41.48,27.89,41.48,Poor Outcome,37.23,29.97 to 45.94,29.97,45.94,higher in worse-outcome group
+37,Gritti 2024,TBI,CPPopt,PRx,poor_outcome,GOSe <=4,pct_above,median (IQR),5,263,Good Outcome,27,19.28 to 31.34,19.28,31.34,Poor Outcome,24.1,16.32 to 30.93,16.32,30.93,lower in worse-outcome group
+26,Kevci 2025,ICH,CPPopt,PRx,poor_outcome,Other: unconscious or deceased,Popt,median (IQR),,184,Good Outcome,84,78 to 92,78,92,Poor Outcome,80,75 to 86,75,86,lower in worse-outcome group
+26,Kevci 2025,ICH,CPPopt,PRx,poor_outcome,Other: unconscious or deceased,pct_below,median (IQR),-5,184,Good Outcome,33,27 to 43,27,43,Poor Outcome,35,26 to 45,26,45,higher in worse-outcome group
+26,Kevci 2025,ICH,CPPopt,PRx,poor_outcome,Other: unconscious or deceased,pct_above,median (IQR),5,184,Good Outcome,35,28 to 44,28,44,Poor Outcome,34,23 to 42,23,42,lower in worse-outcome group
+26,Kevci 2025,ICH,CPPopt,PRx,poor_outcome,Other: unconscious or deceased,pct_within,median (IQR),-5 to 5,184,Good Outcome,28,25 to 33,25,33,Poor Outcome,29,25 to 35,25,35,higher in worse-outcome group
+115,Klein 2018,TBI,CPPopt,PRx,poor_outcome,GOSe <=4,Popt,mean (SD),,20,Good Outcome,73.3,CI 66.2-80.4,,,Poor Outcome,74.7,CI 63.0-86.4,,,higher in worse-outcome group
+115,Klein 2018,TBI,CPPopt,PRx,poor_outcome,GOSe <=4,deltaP,mean (SD),,20,Good Outcome,-17,CI -24.6 - -9.4,,,Poor Outcome,-15.4,CI -19.9 - -10.9,,,higher in worse-outcome group
+307,Kramer 2019,TBI,CPPopt,PRx,poor_outcome,Other: GOSe <=3,deltaP,median (IQR),,71,Good Outcome,8.5,2.5 to 13.5,2.5,13.5,Poor Outcome,11.5,7.5 to 14.5,7.5,14.5,higher in worse-outcome group
+307,Kramer 2019,TBI,CPPopt,PRx,poor_outcome,Other: GOSe <=3,pct_below,median (IQR),-5,71,Good Outcome,14,1 to 48,1,48,Poor Outcome,24,3 to 62,3,62,higher in worse-outcome group
+307,Kramer 2019,TBI,CPPopt,PRx,poor_outcome,Other: GOSe <=3,pct_above,median (IQR),5,71,Good Outcome,37,6 to 70,6,70,Poor Outcome,23,6 to 52,6,52,lower in worse-outcome group
+53,Kranawetter 2024,SAH,CPPopt,PRx,poor_outcome,Other: mRS >= 4,deltaP,mean (SD),,35,Good Outcome,0.32,NR,,,Poor Outcome,2.7,NR,,,higher in worse-outcome group
+20,Lilja-Cyron 2021,TBI,CPPopt,PRx,mortality,,Popt,mean (SD),,200,Survivors,77.2,7.4,,,Non-survivors,77.5,8,,,higher in worse-outcome group
+20,Lilja-Cyron 2021,TBI,CPPopt,PRx,mortality,,deltaP,mean (SD),,200,Survivors,2.7,4.4,,,Non-survivors,-1.2,6.9,,,lower in worse-outcome group
+20,Lilja-Cyron 2021,TBI,CPPopt,PRx,mortality,,pct_below,mean (SD),0,200,Survivors,41.3,NR,,,Non-survivors,52.1,NR,,,higher in worse-outcome group
+13,Petkus 2020,TBI,CPPopt,PRx,mortality,,Popt,mean (SD),,81,Survivors,84.1,9.2,,,Non-survivors,86.9,11.4,,,higher in worse-outcome group
+13,Petkus 2020,TBI,CPPopt,PRx,mortality,,deltaP,mean (SD),,81,Survivors,1.29,5,,,Non-survivors,1.5,4,,,higher in worse-outcome group
+109,Rasulo 2012,SAH,CPPopt,PRx,poor_outcome,GOS <= 3,Popt,median (IQR),,29,Good Outcome,76,73 to 85,73,85,Poor Outcome,78,67 to 88,67,88,higher in worse-outcome group
+109,Rasulo 2012,SAH,CPPopt,PRx,poor_outcome,GOS <= 3,pct_below,median (IQR),0,29,Good Outcome,28,18 to 47,18,47,Poor Outcome,76,48.5 to 82.5,48.5,82.5,higher in worse-outcome group
+423,Riemann 2020,TBI,CPPopt,PRx,mortality,,deltaP,median (IQR),,224,Survivors,1.9,0.9 to 4.1,0.9,4.1,Non-survivors,3.7,1.9 to 5.8,1.9,5.8,higher in worse-outcome group
+252,Silverman 2019,SAH,MAPopt,TOx,poor_outcome,mRS >= 3,Popt,median (IQR),,31,Good Outcome,92.8,86.9 to 98.4,86.9,98.4,Poor Outcome,91.5,85.6 to 119.6,85.6,119.6,lower in worse-outcome group
+252,Silverman 2019,SAH,MAPopt,TOx,poor_outcome,mRS >= 3,LLA,median (IQR),,31,Good Outcome,80.4,76.2 to 82.4,76.2,82.4,Poor Outcome,84.7,76.4 to 108.9,76.4,108.9,higher in worse-outcome group
+252,Silverman 2019,SAH,MAPopt,TOx,poor_outcome,mRS >= 3,ULA,median (IQR),,31,Good Outcome,107.9,97.5 to 113.3,97.5,113.3,Poor Outcome,100.9,93.8 to 125.3,93.8,125.3,lower in worse-outcome group
+252,Silverman 2019,SAH,MAPopt,TOx,poor_outcome,mRS >= 3,pct_below,median (IQR),LLA,31,Good Outcome,10,3.3 to 17.5,3.3,17.5,Poor Outcome,24.1,11.0 to 25.8,11.0,25.8,higher in worse-outcome group
+252,Silverman 2019,SAH,MAPopt,TOx,poor_outcome,mRS >= 3,pct_above,median (IQR),ULA,31,Good Outcome,9.9,6.6 to 17.4,6.6,17.4,Poor Outcome,27.8,18.4 to 36.6,18.4,36.6,higher in worse-outcome group
+252,Silverman 2019,SAH,MAPopt,TOx,poor_outcome,mRS >= 3,pct_outside,median (IQR),LLA to ULA,31,Good Outcome,17.9,14.6 to 33.3,14.6,33.3,Poor Outcome,52,39.3 to 65.0,39.3,65.0,higher in worse-outcome group
+148,Stein 2023,TBI,CPPopt,PRx,mortality,,pct_below,median (IQR),-5,110,Survivors,24.2,15.4 to 34.7,15.4,34.7,Non-survivors,24.3,18.7 to 36.1,18.7,36.1,higher in worse-outcome group
+148,Stein 2023,TBI,CPPopt,PRx,mortality,,pct_above,median (IQR),5,110,Survivors,25.7,17.1 to 33.8,17.1,33.8,Non-survivors,23.1,14.8 to 31.2,14.8,31.2,lower in worse-outcome group
+148,Stein 2023,TBI,CPPopt,PRx,poor_outcome,GOSe <=4,pct_below,median (IQR),-5,110,Good Outcome,24.3,17.2 to 35.9,17.2,35.9,Poor Outcome,24.2,15.6 to 34.7,15.6,34.7,lower in worse-outcome group
+148,Stein 2023,TBI,CPPopt,PRx,poor_outcome,GOSe <=4,pct_above,median (IQR),5,110,Good Outcome,23.1,14.8 to 31.2,14.8,31.2,Poor Outcome,25.7,17.1 to 33.8,17.1,33.8,higher in worse-outcome group
+98,SvedungWettervik 2019,TBI,CPPopt,PRx,poor_outcome,GOSe <=4,pct_below,mean (SD),-10,362,Good Outcome,21,12,,,Poor Outcome,21,14,,,equal
+98,SvedungWettervik 2019,TBI,CPPopt,PRx,poor_outcome,GOSe <=4,pct_above,mean (SD),10,362,Good Outcome,18,9.7,,,Poor Outcome,22,12,,,higher in worse-outcome group
+98,SvedungWettervik 2019,TBI,CPPopt,PRx,poor_outcome,GOSe <=4,pct_within,mean (SD),-10 to 10,362,Good Outcome,57,12,,,Poor Outcome,53,13,,,lower in worse-outcome group
+24,SvedungWettervik 2021b,SAH,CPPopt,PRx,poor_outcome,GOSe <=4,pct_below,mean (SD),-10,242,Good Outcome,25,14,,,Poor Outcome,25,13,,,equal
+24,SvedungWettervik 2021b,SAH,CPPopt,PRx,poor_outcome,GOSe <=4,pct_above,mean (SD),10,242,Good Outcome,16,9,,,Poor Outcome,15,9,,,lower in worse-outcome group
+24,SvedungWettervik 2021b,SAH,CPPopt,PRx,poor_outcome,GOSe <=4,pct_within,mean (SD),-10 to 10,242,Good Outcome,55,12,,,Poor Outcome,56,11,,,higher in worse-outcome group
+431,Wang 2025,SAH,CPPopt,PRx,poor_outcome,GOS <= 3,deltaP,mean (SD),,15,Good Outcome,10.61,1.65,,,Poor Outcome,12.88,2.02,,,higher in worse-outcome group
+3033,Zeiler 2019,TBI,CPPopt,PRx,mortality,,Popt,mean (SD),,204,Survivors,71.1,8.8,,,Non-survivors,74.1,10.6,,,higher in worse-outcome group
+3033,Zeiler 2019,TBI,CPPopt,PRx,mortality,,deltaP,mean (SD),,204,Survivors,0.4,5.3,,,Non-survivors,-3.7,5.9,,,lower in worse-outcome group
+3033,Zeiler 2019,TBI,CPPopt,PRx,mortality,,pct_below,mean (SD),5,204,Survivors,30.9,19.8,,,Non-survivors,46.2,24.9,,,higher in worse-outcome group
+3033,Zeiler 2019,TBI,CPPopt,PRx,poor_outcome,GOSe <=4,Popt,mean (SD),,204,Good Outcome,70.4,8.8,,,Poor Outcome,73.2,10.8,,,higher in worse-outcome group
+3033,Zeiler 2019,TBI,CPPopt,PRx,poor_outcome,GOSe <=4,deltaP,mean (SD),,204,Good Outcome,0.6,5.6,,,Poor Outcome,-2.3,5.8,,,lower in worse-outcome group
+3033,Zeiler 2019,TBI,CPPopt,PRx,poor_outcome,GOSe <=4,pct_below,mean (SD),5,204,Good Outcome,29.9,21.4,,,Poor Outcome,42.2,22.6,,,higher in worse-outcome group

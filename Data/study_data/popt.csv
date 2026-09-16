@@ -1,0 +1,57 @@
+﻿covidence_id,study_id,target,popt,dispersion,stat_type,zero_text,zero_group,head_elev,zero_quote
+1956,Alhamdan 2025,CPPopt,78,72-82,Median (IQR),Heart (arterial line at heart level),Heart,30 deg,Arterial blood pressure (ABP) was monitored via an arterial line at heart level.
+76,Andresen 2018,CPPopt,NR,NR,NR,NR,Not reported,NR,Not reported
+119,Aries 2012,CPPopt,75,NR,NR,Heart (RA),Heart,NR,ABP was zeroed at the level of the right atrium.
+51,Beqiri 2021,CPPopt,NR,NR,NR,NR,Not reported,NR,Not reported
+7,Beqiri 2023,CPPopt,NR,NR,NR,NR,Not reported,NR,Not reported
+366,Bogli 2025a,CPPopt,NR,NR,NR,Foramen of Monro (estimated at tragus),Foramen of Monro,NR,"ABP was measured using arterial lines (Baxter Healthcare, Deerfield, Illinois, USA) inserted into the radial or femoral artery and zeroed at the level of the foramen of Monro (as estimated by tragus level)."
+12,Bogli 2025b,CPPopt,72 / 74 / 74 / 74,69-79 / 71-77 / 70-77 / 70-78,Median (IQR),"Foramen of Monro (post-2015), RA (pre-2015)",Changed during study period,30 deg,"ABP was measured using arterial lines (Baxter Healthcare, Deerfield, Illinois, USA) inserted into the radial or femoral artery and zeroed at the level of the foramen of Monro (after 2015, as estimated by tragus level) or at the level of the right atrium (before 2015)."
+65,Depreitere 2014,CPPopt,72.5 / 72.5,62.5-77.5 / 67.5-77.5,Median (IQR),NR,Not reported,NR,Not reported
+69,Dias 2015,CPPopt,88.2,7.4,Mean (SD),Heart,Heart,30 deg,"At our NCCU, CPP is continuously calculated with ABP transducer located and calibrated at heart level"
+78,Dias 2023,CPPopt,88.7,8.5,Mean (SD),Heart,Heart,30 deg,ABP was measured and calibrated at heart level and patients were treated with 30º head-up elevation
+85,Diedler 2014,CPPopt,83,"IQR width 10, range 68-98","Median (IQR, range)",NR,Not reported,NR,Not reported
+117,Donnelly 2017,CPPopt,78.6,7.9,Mean (SD),Heart (RA),Heart,NR,Arterial blood pressure (ABP) was zeroed at the level of the right atrium
+181,Fan 2021,CPPopt,68.57 / 77.35,6.25 / 12.39,Mean (SD),Foramen of Monro,Foramen of Monro,NR,ABP was monitored through the radial artery with the aid of a standard pressure monitoring kit and was zeroed at the level of the Monro.
+540,Gomez 2022,CPPopt,NR,NR,NR,NR,Not reported,NR,Not reported
+70,Gritti 2023,CPPopt,NR,NR,NR,Tragus,Foramen of Monro,NR,"The arterial transducer was positioned at the level of tragus, and CPP calculated as the difference between MAP (measured at the tragus) and ICP."
+37,Gritti 2024,CPPopt,71.62,65.88-77.62,Median (IQR),Tragus,Foramen of Monro,NR,"The arterial transducer was positioned at level of the tragus, and CPP was calculated as the difference between MAP and ICP."
+26,Kevci 2025,CPPopt,83,78-90,Median (IQR),Heart,Heart,NR,ABP was measured invasively in the radial artery at heart level.
+488,Kevci 2026,CPPopt,72,65-78,Median (IQR),NR,Not reported,NR,Not reported
+103,Kim 2019,CPPopt,NR,NR,NR,NR,Not reported,NR,Not reported
+115,Klein 2018,CPPopt,73.3 / 74.7,66.2-80.4 / 63.0-86.4 (95% CI),Mean (95% CI),NR,Not reported,NR,Not reported
+307,Kramer 2019,CPPopt,70-75 / 74,65-70 to 80-85 (manual) / 67-82,Median (IQR),NR,Not reported,NR,Not reported
+53,Kranawetter 2024,CPPopt,79.3 / 103,76.8-83 / 98.2-107.7,Median (95% CI),NR,Not reported,NR,Not reported
+106,Lang 2015,CPPopt,74.7,IQR width 8.2,Median (IQR),NR,Not reported,NR,Not reported
+9,Lenell 2024,CPPopt,75.2 / 80.8,71.6-79.6 / 75.8-87.2,Median (IQR),Heart,Heart,NR,"The pressure dome for the EVD was placed at the level of the lateral ventricles, and the arterial blood pressure dome was placed at the heart level."
+20,Lilja-Cyron 2021,CPPopt,77.4,7.7,Mean (SD),Heart (RA),Heart,NR,"ABP was monitored invasively through an arterial line (radial or femoral) using a standard pressure monitoring kit (Baxter Healthcare, CardioVascular Group, Irvine, CA) and was zeroed at the level of the right atrium."
+107,Liu 2017a,CPPopt,NR,NR,NR,NR,Not reported,NR,Not reported
+22,Liu 2017b,CPPopt,NR,NR,NR,Heart (RA),Heart,NR,"ABP was monitored invasively through the radial or femoral artery using a standard pressure monitoring kit (Baxter Healthcare, CardioVascular Group, Irvine, CA), and was zeroed at the level of the right atrium."
+29,Malinova 2024,CPPopt,NR,NR,NR,NR,Not reported,NR,Not reported
+212,Pelah 2025,CPPopt,NR,NR,NR,NR,Not reported,NR,Not reported
+536,Petersen 2020,MAPopt,NR,NR,NR,NR,Not reported,NR,Not reported
+469,Petersen 2026,MAPopt,90.9,12.3,Mean (SD),NR,Not reported,NR,Not reported
+460,Petkus 2016,CPPopt,NR,NR,NR,NR,Not reported,NR,Not reported
+8,Petkus 2017,CPPopt,NR,NR,NR,NR,Not reported,NR,Not reported
+13,Petkus 2020,CPPopt,78.3 / 85.5,12.3 / 12.4,Mean (SD),NR,Not reported,NR,Not reported
+109,Rasulo 2012,CPPopt,76.7,NR,Median (no IQR given),NR,Not reported,NR,Not reported
+423,Riemann 2020,CPPopt,72,65.9-77.5,Median (IQR),NR,Not reported,NR,Not reported
+600,Rivera-Lara 2019,MAPopt,89.7,84.6-100,Median (IQR),NR,Not reported,NR,Not reported
+363,Shah 2025,MAPopt,102.5 / 85,88-113 / 81-100.5,Median (IQR),NR,Not reported,NR,Not reported
+252,Silverman 2019,MAPopt,NR,NR,NR,NR,Not reported,NR,Not reported
+148,Stein 2023,CPPopt,74.3,69.29-80.02,Median (IQR),Tragus,Foramen of Monro,NR,"radial or femoral arterial lines connected to pressure transducers (Baxter Healthcare Corp. CardioVascular Group, Irvine, CA, USA) zeroed at the level of the tragus [14, 15] are used to monitor ABP."
+520,Steiner 2002,CPPopt,NR,NR,NR,NR,Not reported,NR,Not reported
+98,SvedungWettervik 2019,CPPopt,NR,NR,NR,NR,Not reported,NR,Not reported
+301,SvedungWettervik 2021a,CPPopt,74 / 82 / 75 / 80 / 78 / 83,10 / 11 / 6 / 7 / 9 / 10,Mean (SD),NR,Not reported,NR,Not reported
+24,SvedungWettervik 2021b,CPPopt,83 / 81 / 87 / 83,10 / 8 / 9 / 8,Mean (SD),Heart (radial artery ABP transducer),Heart,NR,Arterial blood pressure was measured invasively in the radial artery at heart level.
+46,SvedungWettervik 2022,CPPopt,NR,NR,NR,Heart,Heart,NR,ABP was monitored invasively in the radial artery at heart level.
+27,SvedungWettervik 2023,CPPopt,NR,NR,NR,Heart,Heart,NR,ABP was measured invasively in the radial artery at heart level.
+74,SvedungWettervik 2024a,CPPopt,NR,NR,NR,Heart,Heart,30 deg,ABP was measured in the radial artery at heart level.
+36,SvedungWettervik 2024b,CPPopt,76 / 80,73-82 / 76-86,Median (IQR),Heart,Heart,30 deg,Arterial blood pressure was measured invasively in the radial artery and zeroed at the level of the heart.
+28,SvedungWettervik 2024c,CPPopt,77 / 81,72-83 / 75-87,Median (IQR),Heart,Heart,NR,ABP was measured in the radial artery at the heart level.
+11,SvedungWettervik 2024d,CPPopt,NR,NR,NR,"Heart  (2002-2015), changed to tragus (2015-2022)",Changed during study period,NR,"ABP was monitored in the radial/femoral artery (Baxter Healthcare, Deerfield, IL) with a zero calibration at the level of the heart (2002-2015) and tragus (2015-2022)."
+235,SvedungWettervik 2025a,CPPopt,76,6,Mean (SD),"Heart  (2002-2015), changed to tragus (2015-2022)",Changed during study period,NR,"ABP was monitored in the radial or femoral artery (Baxter Healthcare, Deerfield, Illinois) at heart (2002-2015) or tragus (2015-2022) level, respectively."
+38,SvedungWettervik 2025b,CPPopt,75 / 77 / 75,71-79 / 73-82 / 72-81,Median (IQR),"Heart (until 2015), foramen of Monro (2015 onward)",Changed during study period,NR,"Arterial blood pressure (ABP) was monitored in the radial or femoral artery (Baxter Healthcare, Deerfield, Illinois) at the level of the heart (until 2015) or the foramen of Monro (2015 and forward)."
+431,Wang 2025,CPPopt,NR,NR,NR,NR,Not reported,NR,Not reported
+3033,Zeiler 2019,CPPopt,71.7,9.3,Mean (SD),NR,Not reported,NR,Not reported
+277,Zhang 2024,MAPopt,NR,NR,NR,NR,Not reported,NR,Not reported
+2386,Zweifel 2008,CPPopt,NR,NR,NR,NR,Not reported,NR,Not reported
