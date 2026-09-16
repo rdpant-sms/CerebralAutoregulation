@@ -9,9 +9,8 @@ Inputs come from `../Data/study_data/effects_long.csv`. Outputs go to `../Data/m
 R version: 4.5.0
 
 ## Data organization
-
 ```         
-/meta_
+/CerebralAutoregulation
 |-- /code_meta
     |-- 01_pool_odds_ratios.R
     |-- 02_pool_correlations.R
