@@ -28,6 +28,7 @@ pool <- function(rows, label) {
 }
 
 results <- NULL 
+primary <- read_cells("OR", "primary")
 
 # --- 1. CPPopt and MAPopt pooled together ------------------------
 # Pooling CPPopt and MAPopt targets together
@@ -63,8 +64,6 @@ for (outcome in c("mortality", "poor_outcome")) {
 }
 
 # --- 2. separate targets (CPPopt and MAPopt separate) ----------------------------------------------------
-primary <- read_cells("OR", "primary")
-
 for (target in c("CPPopt", "MAPopt")) {
   for (outcome in c("mortality", "poor_outcome")) {
     for (metric in METRICS) {
