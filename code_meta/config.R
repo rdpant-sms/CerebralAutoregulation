@@ -24,8 +24,20 @@ CORR_RESULTS <- paste0(META_OUTPUTS, "corr_results.csv")
 TAU_METHOD <- "REML"
 CI_METHOD  <- "HK"
 
+# Which I^2 the reported I2 column holds: "tau2" (from the fitted REML tau^2) or
+# "Q" (Higgins & Thompson). Both are always written out; see tidy_meta() below.
 I2_METHOD  <- "tau2"
 MIN_K      <- 3
+
+# Reporting increment for the odds ratios. The estimates are stored per 1% of
+# monitoring time, which is too small an increment to read: a real effect looks
+# like "OR 1.02". Everything is therefore reported per 10%. log(OR) is linear in
+# the increment, so multiplying yi and sei by 10 is an exact re-expression. It
+# leaves I^2, the weights, Q and every p-value unchanged, and multiplies tau^2
+# by 100. Set OR_UNIT to 1 to go back to per-1% reporting.
+OR_UNIT       <- 10
+OR_UNIT_LABEL <- "per 10% of monitoring time"
+
 METRICS    <- c("pct_below", "pct_above", "pct_within", "pct_outside")
 
 ETIOLOGY <- c("Traumatic Brain Injury" = "TBI", "Subarachnoid Hemorrhage" = "SAH",
@@ -46,6 +58,11 @@ read_cells <- function(effect, sets) {
   d$yi <- as.numeric(d$yi); d$sei <- as.numeric(d$sei)
   d$n_total <- suppressWarnings(as.numeric(d$n_total))
   d <- d[!is.na(d$yi) & !is.na(d$sei) & d$sei > 0, ]
+  # re-express the odds ratios on the reporting increment (see OR_UNIT)
+  if (effect == "OR") {
+    d$yi  <- d$yi  * OR_UNIT
+    d$sei <- d$sei * OR_UNIT
+  }
   d$etiology_short <- ifelse(d$etiology %in% names(ETIOLOGY), ETIOLOGY[d$etiology],
                              substr(d$etiology, 1, 3))
   d
@@ -59,12 +76,6 @@ to_plot_scale <- function(x, effect) {
 
 # One row of results from a fitted model, so every script reports the same
 # numbers in the same order.
-#
-# Two I^2 values are stored on purpose. {meta} uses the Higgins & Thompson (2002)
-# formula I2 = (Q - df) / Q, which is also the Cochrane Handbook one. The other
-# definition works from the fitted between-study variance, I2 = tau2/(tau2 + s2).
-# They agree under a DerSimonian-Laird tau^2 but can differ sharply under REML,
-# so both are written out and I2_METHOD picks which one the `I2` column holds.
 tidy_meta <- function(model, effect, analysis, target, outcome, metric) {
   i2_q  <- 100 * update(model, method.I2 = "Q")$I2
   i2_t2 <- 100 * update(model, method.I2 = "tau2")$I2
