@@ -1,8 +1,5 @@
 # ---------------------------------------------------------------------------
 # Pooling the correlations, with the {meta} package.
-#
-# Every coefficient has already been oriented so that a positive r means more
-# deviation from the target and a worse outcome.
 # ---------------------------------------------------------------------------
 suppressMessages(library(meta))
 source("config.R")
