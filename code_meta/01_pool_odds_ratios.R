@@ -1,17 +1,19 @@
 # ---------------------------------------------------------------------------
 # Pooling the odds ratios, with the {meta} package.
 #
-# Three analyses are run:
+# Three analyses are run, each on the cells that reach MIN_K studies:
 #   1. combined targets             CPPopt and MAPopt pooled together, as subgroups
 #   2. separate targets             one record per institutional cohort, each target separately
-#   3. overlapping included         the same as no. 1, with overlapping cohorts re-included
+#   3. overlapping included         the same as no. 2, with overlapping cohorts re-included
+#
+# Writes ../Data/meta_outputs/meta_results.csv, one row per meta-analysis.
 
 # ---------------------------------------------------------------------------
 suppressMessages(library(meta))
 source("config.R")
 
 # Pool one set of studies. 
-# TAU_METHOD, CI_METHOD, I2_METHOD set in Config.R
+# TAU_METHOD, CI_METHOD, I2_METHOD set in config.R
 pool <- function(rows, label) {
   metagen(TE      = rows$yi,
           seTE    = rows$sei,
@@ -27,7 +29,7 @@ pool <- function(rows, label) {
           title            = label)
 }
 
-results <- NULL 
+results <- NULL
 primary <- read_cells("OR", "primary")
 
 # --- 1. CPPopt and MAPopt pooled together ------------------------
@@ -64,6 +66,7 @@ for (outcome in c("mortality", "poor_outcome")) {
 }
 
 # --- 2. separate targets (CPPopt and MAPopt separate) ----------------------------------------------------
+
 for (target in c("CPPopt", "MAPopt")) {
   for (outcome in c("mortality", "poor_outcome")) {
     for (metric in METRICS) {
@@ -78,7 +81,7 @@ for (target in c("CPPopt", "MAPopt")) {
       print(summary(model))
 
       results <- rbind(results,
-        tidy_meta(model, "OR", "separate targets", target, outcome, metric))
+        tidy_meta(model, "OR", "primary", target, outcome, metric))
     }
   }
 }
