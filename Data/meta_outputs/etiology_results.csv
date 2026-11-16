@@ -1,0 +1,6 @@
+"analysis","target","outcome","metric","k","est","ci_low","ci_high","pi_low","pi_high","I2","I2_Q","I2_tau2","tau2","pval","Q","Q_pval","targets","studies"
+"primary","SAH","poor_outcome","pct_below",3,1.2282,0.7611,1.9821,0.9166,1.6457,0,62.6185,0,0,0.2059,5.3502,0.0689,"CPPopt + MAPopt","Fan 2021; Shah 2025; SvedungWettervik 2024c"
+"sensitivity_incl_overlap","TBI","poor_outcome","pct_below",4,1.2223,0.9703,1.5397,0.8226,1.8162,50.594,49.539,50.594,0.0102,0.0697,5.9452,0.1143,"CPPopt","Bogli 2025b; Donnelly 2017; SvedungWettervik 2024d; SvedungWettervik 2025b"
+"sensitivity_incl_overlap","TBI","poor_outcome","pct_above",3,1.1417,0.37,3.5228,0.211,6.1767,80.5763,79.4224,80.5763,0.1012,0.6631,9.7193,0.0078,"CPPopt","Bogli 2025b; SvedungWettervik 2019; SvedungWettervik 2024d"
+"sensitivity_incl_overlap","TBI","poor_outcome","pct_within",3,0.6246,0.4795,0.8136,0.3628,1.0751,0,0,0,0,0.0166,0.474,0.789,"CPPopt","SvedungWettervik 2021a; SvedungWettervik 2023; SvedungWettervik 2024a"
+"sensitivity_incl_overlap","SAH","poor_outcome","pct_below",3,1.2282,0.7611,1.9821,0.9166,1.6457,0,62.6185,0,0,0.2059,5.3502,0.0689,"CPPopt + MAPopt","Fan 2021; Shah 2025; SvedungWettervik 2024c"

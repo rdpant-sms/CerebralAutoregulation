@@ -1,0 +1,56 @@
+covidence_id,study_id,dur_reported,dur_stat,dur_table,dur_hours,dur_cohort_hours,dur_hours_basis,dur_printed,avail_category,avail_time_pct,avail_table,avail_basis,avail_printed,notes
+1956,Alhamdan 2025,no,,NR,,,,NR,time,54.0,54% of time,percentage of monitoring time,54% of monitoring time,Analysis window: first 7 days post-decompressive craniectomy. Inclusion: ≥12 h of ICP data (14 patients excluded for <12 h)
+76,Andresen 2018,yes,median,142 (med),142.0,142.0,as reported,Median 142 h (IQR 69–234),patients,,100% of patients,proportion of patients in whom a target could be found,100% of patients (85/85),NR
+119,Aries 2012,yes,mean,96 (mean),96.0,96.0,as reported,Mean 4 days (range 1–28),time,55.0,55% of time,percentage of monitoring time,55% of recording time (range 1–91%); 100% of patients (299),327 monitored and 299 analyzed
+51,Beqiri 2021,no,,NR,,,,NR,time,83,83% of time,"authors' CPPopt algorithm; 89% with CPPopt_MA, not used","83% of monitoring time (range 75–90), conventional; 89% (range 81–93), moving-average",Analysis over first 5 days from injury. No monitoring duration listed
+7,Beqiri 2023,no,,NR,,,,NR,time,80.5,80.5% of time,"authors' CPPopt algorithm; 85% with CPPopt_MA, not used","80.5% of monitoring time (IQR 70–87.5), conventional; 85% (IQR 75.7–91.2), moving-average",Analysis over first 7 days
+366,Bogli 2025a,yes,median,157 (med),157.0,157.0,as reported,"Median 157 h (IQR 88–279); cohort total 45,200 h",joint,,81% of time (joint with LLA),joint yield of CPPopt and LLA; CPPopt alone not reported,"81% of monitoring time (IQR 74–86), joint yield of CPPopt and LLA","n=234, CPPopt yield alond is not listed"
+12,Bogli 2025b,yes,median,163 (med),163.0,163.0,as reported,"Median 163 h (IQR 75–249); cohort total 150,756 h",time,79.7,79.7% of time,percentage of monitoring time,79.7% of monitoring time (IQR 67.1–86.1),n=809
+65,Depreitere 2014,no,,NR,,,,NR,time,95,95% of time,"BrainIT outcome cohort, LAx/DATACAR method (the only method applied to it); a separate 21-patient cohort gives 44% with PRx-based CPPopt","95% of monitoring time (IQR 90–97), DATACAR method, BrainIT cohort (n=180); separate cohort (n=21): 97% with DATACAR, 44% with PRx-based CPPopt","No monitoring duration listed, analysis over first 48 hours"
+69,Dias 2015,yes,median,283 (med),283.0,283.0,as reported,"Median 283 h (IQR width 169); cohort total 5,521 h",time,59.0,59% of time,percentage of monitoring time,59% of monitoring time (IQR width 13%); 88.9% of patients (16/18),n=18
+78,Dias 2023,no,,NR,,,,NR,NR,,NR,,NR,NR
+85,Diedler 2014,yes,median,78 (med),78.0,78.0,as reported,Median 78 h (IQR width 74; range 21–190),time,57.1,57.1% of time,percentage of monitoring time,57.1% of monitoring time (IQR width 27.3; range 0–92.9); 97% of patients (37/38),n=38
+117,Donnelly 2017,yes,mean,117 GR / 139 MD / 152 SD–VS / 122 died (mean),135.69,135.69,n-weighted average of four outcome-group means (n 139/183/253/154),Mean by outcome group: good recovery 116.84 h (SD 91.67); moderate disability 139.40 h (SD 106.91); severe disability or vegetative 151.63 h (SD 114.73); death 122.13 h (SD 90.53),time,93,93% of time,"multi-window CPPopt, used for all outcome analyses in the paper; 60% with the single 4-h window","60% ± 14 of monitoring time, single 4-h window; 93% ± 8, multi-window",Monitoring duration only listed for GOS subgroups
+181,Fan 2021,yes,median,52 (med),52.0,52.0,as reported,Median 52 h (IQR width 64; range 13–133),patients,,91% of patients,proportion of patients in whom a target could be found,91% of patients (52),NR
+540,Gomez 2022,yes,median,81 (med),81.37,81.37,as reported,"Median 4,882 min (IQR 3,219–7,884); cohort total 377,744 min",time,70.0,70% of time,percentage of monitoring time,70% of monitoring time (IQR 55–81),n=77
+70,Gritti 2023,yes,median,97 (med),96.83,96.83,"total monitoring time; 5,667 min after filtering","Median 5,809.5 min (IQR 3,821.3–9,875.5); after filtering 5,667.0 min (IQR 3,621.8–9,497.3)",time,52.0,52% of time,percentage of monitoring time,52% of monitoring time; 93% of patients (152/164),n=164
+37,Gritti 2024,yes,median,94 (med),93.58,93.58,as reported,"Median 5,615 min (IQR 3,653–9,767)",time,45.6,45.6% of time,percentage of monitoring time,45.6% of monitoring time,n=263
+26,Kevci 2025,yes,median,216 (med),216.0,216.0,as reported,Median 9 days (IQR 4–14),time,64.0,64% of time,percentage of monitoring time,64% of monitoring time,n=184
+488,Kevci 2026,no,,NR,,,,NR,time,85.0,85% of time,percentage of monitoring time,85% of monitoring time,n=166
+103,Kim 2019,no,,NR,,,,NR,NR,,NR,,NR,NR
+115,Klein 2018,no,,NR,,,,NR,NR,,NR,,NR,NR
+307,Kramer 2019,no,,NR,,,,NR,epochs,,84% of 6-h epochs,"manual determination, used for the outcome analysis; 49% automated","84% of 6-h epochs (985/1173), manual; 49% (579/1173) automated, 74% with a looser threshold",n=71
+53,Kranawetter 2024,no,,NR,,,,NR,not_yield,,NR,"76.9% is the proportion of convex curve fits, not a yield",NR,Same cohort as malinova
+106,Lang 2015,no,,NR,,,,NR,patients,,97.4% of patients,proportion of patients in whom a target could be found,"97.4% of patients (299/307), PRx; 97.7%, L-PRx",n=307
+9,Lenell 2024,yes,median,189 (med),189.07,189.07,"CPP monitoring time; MAP monitoring time 13,081 min also reported","Median CPP monitoring 11,344 min (IQR 6,490–13,434); MAP monitoring 13,081 min (IQR 8,980–13,818)",time,54.47,53.7% / 56.5% of time (by age),n-weighted average of the 16-64 y (n 342) and >=65 y (n 129) groups,53.7% of good monitoring time (age 16–64); 56.5% (age ≥65),n=471
+20,Lilja-Cyron 2021,yes,median,137 (med),137.3,137.3,as reported,Median 137.3 h (IQR 68–216),time,92.9,92.9% of time,percentage of monitoring time,92.9% of monitoring time (IQR 81.2–97.2),n=200
+107,Liu 2017a,yes,mean,119 (mean),118.6,118.6,as reported,Mean 118.6 h (range 1–536),time,53.2,53.2% of time,"PRx-based; 59.6% with weighted PRx, not used","53.2% ± 20% of monitoring time, PRx; 59.6% ± 27%, weighted PRx; 97.5% of patients (502/515)",n=515
+22,Liu 2017b,yes,mean,142 (mean),142.0,142.0,as reported,Mean 142.0 h (range 1–697),time,50.5,50.5% of time,"single window; 94.2% with the multi-window method, not used","50.5% ± 0.94 of monitoring time, single window; 94.2% ± 2.11, multi-window",n=526
+29,Malinova 2024,no,,NR,,,,NR,not_yield,,NR,"27.8% is an eligibility proportion, not a yield",NR,n=324
+212,Pelah 2025,no,,NR,,,,NR,time,51.0,51% of time,percentage of monitoring time,51% of monitoring time; 96.3% of patients (416/432),n=432
+536,Petersen 2020,yes,mean,28 (mean),28.0,28.0,as reported,Mean 28.0 h (SD 18.4),time,83.2,83.2% of time,percentage of monitoring time; target computable in all patients,83.2% ± 14.7% of monitoring time; 100% of patients,n=78
+469,Petersen 2026,yes,median,17 (med),17.2,17.2,as reported,Median 17.2 h (IQR 9.7–20.7),time,90.0,90% of time,percentage of monitoring time,90% of monitoring time; 95.2% of patients (199/209),n=209
+460,Petkus 2016,no,,NR,,,,NR,NR,,NR,,NR,NR
+8,Petkus 2017,no,,NR,,,,NR,NR,,NR,,NR,NR
+13,Petkus 2020,no,,NR,,,,NR,time,64.0,64% of time,percentage of monitoring time,64% of monitoring time,n=81
+109,Rasulo 2012,yes,median,115 good / 36 poor (med),76.86,76.86,"n-weighted average of good- and poor-outcome medians (n 15/14); cohort total 2,757 h","Median by outcome group: good 115 h (IQR 48–140), poor 36 h (IQR 20–120); cohort total 2,757 h",patients,,89.6% of patients,proportion of patients in whom a target could be found,89.6% of patients (26/29),n=29
+423,Riemann 2020,no,,NR,,,,NR,time,80.4,80.4% of time,"PRx-based; 80.0% with L-PRx, not used","80.4% of monitoring time (IQR 71.4–87.6), PRx; 80.0% (IQR 70.4–86.7), L-PRx; 96.4% of patients (216/224)",n=224
+363,Shah 2025,yes,median,96 (med),96.0,96.0,as reported,Median 4 days (IQR 3–4),epochs,,92.2% of daily estimates,proportion of daily MAPopt estimates (118/128),92.2% of monitoring epochs; 100% of patients,n=35 for final analysis
+252,Silverman 2019,yes,mean,68 (mean),67.8,67.8,as reported,Mean 67.80 h (SD 50.83),time,89.53,89.53% of time,percentage of monitoring time,89.53% ± 6.69% of monitoring time; 100% of patients,n=31
+148,Stein 2023,yes,median,70 (med),69.6,69.6,as reported,Median 69.6 h (IQR 36.37–122.2),patients,,93.6% of patients,proportion of patients in whom a target could be found,93.6% of patients (103/110),n=110
+520,Steiner 2002,yes,mean,118 (mean),118.0,118.0,as reported,Mean 118 h (range 8–358),patients,,60% of patients,proportion of patients in whom a target could be found,60% of patients (68/114),n=114
+98,SvedungWettervik 2019,no,,NR,,,,NR,patients,,84–99% of patients (by day),proportion of patients per monitoring day,"84–99% of patients, by day",n=362
+301,SvedungWettervik 2021a,no,,NR,,,,NR,time,53.0,53% of time,percentage of monitoring time,"53% of monitoring time; 80–100% of patients, by day",n-98
+24,SvedungWettervik 2021b,no,,NR,,,,NR,time,54.0,54% of time,percentage of monitoring time,"54% of good monitoring time, first 10 days; 90–99% of patients, by day",n=242
+46,SvedungWettervik 2022,no,,NR,,,,NR,time,54.0,54% of time,percentage of monitoring time,"54% of monitoring time, first 10 days; 90–96% of patients, by day",n=75
+27,SvedungWettervik 2023,no,,NR,,,,NR,time,53.0,53% of time,percentage of monitoring time,"53% of monitoring time, first 5 days",n=383
+74,SvedungWettervik 2024a,yes,median,120 (med),120.0,120.0,as reported,Median 5 days (IQR 4–6),patients,,98.4% of patients,proportion of patients in whom a target could be found,98.4% of patients (379/385),n=385
+36,SvedungWettervik 2024b,yes,median,240 TBI / 288 aSAH (med),,240;288,"two separate cohorts, TBI (n=378) and aSAH (n=432); not averaged",Median TBI cohort 10 days (IQR 6–14); aSAH cohort 12 days (IQR 8–16),time,54.0,54% of time,percentage of monitoring time,"54% of monitoring time, both cohorts",n=378 TBI and n=432 aSAH
+28,SvedungWettervik 2024c,yes,median,192 (med),192.0,192.0,as reported,Median 8 days (IQR 6–9),time,54.0,54% of time,percentage of monitoring time,54% of monitoring time,n=432
+11,SvedungWettervik 2024d,no,,NR,,,,NR,NR,,NR,,NR,NR
+235,SvedungWettervik 2025a,yes,mean,120 (mean),120.0,120.0,as reported,Mean 5 days (SD 4),NR,,NR,,NR,n=425
+38,SvedungWettervik 2025b,no,,NR,,,,NR,NR,,NR,,NR,NR
+431,Wang 2026,no,,NR,,,,NR,NR,,NR,,NR,NR
+3033,Zeiler 2019,yes,mean,151 non-DC (mean),150.5,150.5,non-DC population (n=159); mean (SD) by the convention of Appendix B,"Mean 150.5 h (SD 109.3), non-DC population (n=159)",NR,,NR,,NR,n=204
+277,Zhang 2024,yes,mean,3.2 (mean),3.2,3.2,as reported,Mean 3.2 h (SD 1.1),not_yield,,NR,"vasoparalysis proportions, not a yield; MAPopt still used",NR,NR
+2386,Zweifel 2008,no,,NR,,,,NR,NR,,NR,,NR,NR

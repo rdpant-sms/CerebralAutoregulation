@@ -1,0 +1,6 @@
+"outcome","metric","by","Q","df","pval"
+"poor_outcome","pct_below","etiology",0.2945,2,0.8631
+"poor_outcome","pct_below","target",0.217,1,0.6414
+"poor_outcome","pct_above","etiology",0.2815,1,0.5957
+"poor_outcome","pct_above","target",0.2815,1,0.5957
+"poor_outcome","pct_outside","etiology",5.1508,1,0.0232

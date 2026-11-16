@@ -1,11 +1,9 @@
 "analysis","target","outcome","metric","k","est","ci_low","ci_high","pi_low","pi_high","I2","I2_Q","I2_tau2","tau2","pval","Q","Q_pval"
-"any_target","Any","poor_outcome","pct_below",7,1.0211,1.0084,1.0339,1.0093,1.033,0.6617,18.6795,0.6617,0,0.0065,7.3782,0.2873
-"any_target","Any","poor_outcome","pct_above",3,1.0679,0.9926,1.1488,0.9825,1.1606,0.0083,0,0.0083,0,0.0608,1.541,0.4628
-"separate targets","CPPopt","mortality","pct_below",3,1.0404,1.0082,1.0737,0.9827,1.1015,30.0943,1.6767,30.0943,1e-04,0.0324,2.0341,0.3617
-"separate targets","CPPopt","poor_outcome","pct_below",5,1.0232,0.9993,1.0476,1.005,1.0417,0.2109,43.4068,0.2109,0,0.0544,7.068,0.1323
-"separate targets","MAPopt","poor_outcome","pct_outside",3,1.0258,0.9674,1.0877,0.9367,1.1234,80.7037,65.4086,80.7037,3e-04,0.2028,5.7818,0.0555
-"sensitivity_incl_overlap","CPPopt","mortality","pct_below",3,1.0404,1.0082,1.0737,0.9827,1.1015,30.0943,1.6767,30.0943,1e-04,0.0324,2.0341,0.3617
-"sensitivity_incl_overlap","CPPopt","poor_outcome","pct_below",7,1.021,1.0009,1.0415,0.9912,1.0517,36.8678,50.1171,36.8678,1e-04,0.043,12.0282,0.0613
-"sensitivity_incl_overlap","CPPopt","poor_outcome","pct_above",4,1.0106,0.942,1.0841,0.8988,1.1363,71.0642,70.2054,71.0642,9e-04,0.666,10.0689,0.018
-"sensitivity_incl_overlap","CPPopt","poor_outcome","pct_within",4,0.9535,0.9337,0.9737,0.916,0.9925,0,0,0,0,0.0055,0.8246,0.8436
-"sensitivity_incl_overlap","MAPopt","poor_outcome","pct_outside",3,1.0258,0.9674,1.0877,0.9367,1.1234,80.7037,65.4086,80.7037,3e-04,0.2028,5.7818,0.0555
+"any_target","Any","poor_outcome","pct_below",6,1.2332,1.0763,1.413,1.0963,1.3873,0.0302,25.2907,0.0302,0,0.0107,6.6926,0.2445
+"any_target","Any","poor_outcome","pct_above",3,1.5937,0.7305,3.4766,0.452,5.6185,49.5708,47.9994,49.5708,0.0502,0.1238,3.8461,0.1462
+"primary","CPPopt","poor_outcome","pct_below",4,1.26,0.9378,1.6929,1.0285,1.5435,0.017,52.8219,0.017,0,0.0884,6.3589,0.0954
+"primary","MAPopt","poor_outcome","pct_outside",3,1.2882,0.7188,2.3085,0.5275,3.146,80.1091,65.4086,80.1091,0.0295,0.2028,5.7818,0.0555
+"sensitivity_incl_overlap","CPPopt","poor_outcome","pct_below",6,1.2345,0.9902,1.5389,0.9015,1.6903,41.7168,56.0278,41.7168,0.0104,0.0575,11.3708,0.0445
+"sensitivity_incl_overlap","CPPopt","poor_outcome","pct_above",3,1.1417,0.37,3.5228,0.211,6.1767,80.5763,79.4224,80.5763,0.1012,0.6631,9.7193,0.0078
+"sensitivity_incl_overlap","CPPopt","poor_outcome","pct_within",3,0.6246,0.4795,0.8136,0.3628,1.0751,0,0,0,0,0.0166,0.474,0.789
+"sensitivity_incl_overlap","MAPopt","poor_outcome","pct_outside",3,1.2882,0.7188,2.3085,0.5275,3.146,80.1091,65.4086,80.1091,0.0295,0.2028,5.7818,0.0555

@@ -1,0 +1,4 @@
+"letter","title","file","k"
+"A","Percentage of monitoring time below the optimal target and mortality (odds ratio per 10% of monitoring time)","forest_unpooled_mortality_pct_below.png",2
+"B","Percentage of monitoring time within the optimal range and poor functional outcome (odds ratio per 10% of monitoring time)","forest_unpooled_poor_outcome_pct_within.png",2
+"C","Absolute optimal pressure and limits of autoregulation and poor functional outcome (odds ratio per 1 mm Hg)","forest_unpooled_poor_outcome_pressure.png",3

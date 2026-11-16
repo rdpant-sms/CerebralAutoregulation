@@ -1,0 +1,16 @@
+{
+ "k": 5,
+ "beta": -0.016,
+ "lo": -0.197,
+ "hi": 0.165,
+ "p": 0.8595,
+ "h_min": 28,
+ "h_max": 192,
+ "studies": [
+  "Donnelly 2017",
+  "Fan 2021",
+  "Petersen 2020",
+  "Shah 2025",
+  "SvedungWettervik 2024c"
+ ]
+}
