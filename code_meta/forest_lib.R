@@ -125,7 +125,16 @@ fit_model <- function(data, effect) {
 axis_limits <- function(model) {
   study_low   <- model$TE - 1.96 * model$seTE
   study_high  <- model$TE + 1.96 * model$seTE
-  all_limits  <- c(study_low, study_high)
+
+  # A study carrying almost no weight can have an interval many times wider than
+  # the rest of the cell. Letting it set the axis squashes every informative
+  # study into the middle, so the axis is built from the studies that actually
+  # carry the analysis; the others are drawn with arrowheads.
+  weight  <- model$w.random / sum(model$w.random)
+  counted <- weight >= 0.02
+  if (sum(counted) < 2) counted <- rep(TRUE, length(weight))
+
+  all_limits  <- c(study_low[counted], study_high[counted])
 
   trimmed <- as.numeric(quantile(all_limits, c(0.05, 0.95)))
 
@@ -145,12 +154,39 @@ axis_limits <- function(model) {
   c(low - padding, high + padding)
 }
 
+# Odds-ratio axes are drawn on a log scale, so evenly spaced numbers crowd
+# together at the right-hand end once the range is wide. Ticks are taken from a
+# ladder of round values that are roughly evenly spaced in log terms instead.
+OR_TICK_LADDER <- c(0.01, 0.025, 0.05, 0.1, 0.15, 0.25, 0.4, 0.5, 0.75, 1,
+                    1.5, 2, 3, 4, 6, 10, 15, 25, 40, 100, 250)
+
+# The smallest run of ladder values that still covers the whole axis.
+ladder_ticks <- function(low, high) {
+  below <- which(OR_TICK_LADDER <= low)
+  above <- which(OR_TICK_LADDER >= high)
+  first <- if (length(below)) max(below) else 1
+  last  <- if (length(above)) min(above) else length(OR_TICK_LADDER)
+  ticks <- OR_TICK_LADDER[first:last]
+
+  # thin out a long run, keeping both ends so the axis still covers the data,
+  # and keeping the null value 1
+  if (length(ticks) > 7) {
+    stride <- ceiling((length(ticks) - 1) / 6)
+    keep   <- c(seq(1, length(ticks), by = stride), length(ticks),
+                match(1, ticks, nomatch = 0))
+    ticks  <- ticks[sort(unique(keep[keep > 0]))]
+  }
+  ticks
+}
+
 nice_ticks <- function(limits, effect) {
   low  <- to_plot_scale(limits[1], effect)
   high <- to_plot_scale(limits[2], effect)
 
   if (effect == "OR") {
-    steps <- c(0.05, 0.1, 0.25, 0.5)
+    ticks <- ladder_ticks(low, high)
+    if (length(ticks) >= 4) return(ticks)
+    steps <- c(0.05, 0.1, 0.25, 0.5)   # narrow range: plain steps read better
   } else {
     steps <- c(0.1, 0.2, 0.25, 0.5)
   }
@@ -198,7 +234,7 @@ draw_forest <- function(model, data, file, choice, effect, width = 12.4) {
 
   if (effect == "OR") {
     effect_label <- "OR"
-    x_label      <- "Odds ratio per 1% of monitoring time"
+    x_label      <- paste("Odds ratio", OR_UNIT_LABEL)
   } else {
     effect_label <- "r"
     x_label      <- "Correlation with worse functional outcome (r)"
