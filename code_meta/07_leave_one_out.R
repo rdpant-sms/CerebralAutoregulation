@@ -1,8 +1,10 @@
 # Leave-one-out sensitivity analysis for the primary odds-ratio forest plots.
 #
-# Each of the four primary figures is refitted k+1 times: once with every study,
-# then once with each study omitted in turn. 
+# Each primary odds-ratio cell (target types pooled together, as in the primary
+# forest plots) is refitted k+1 times: once with every study, then once with each
+# study omitted in turn.
 #
+# Writes ../Data/meta_outputs/leave_one_out.csv.
 suppressMessages(library(meta))
 source("config.R")
 
