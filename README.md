@@ -1,12 +1,12 @@
-# Deviation From Autoregulation-Derived Optimal Pressure Targets and Outcome After Acute Brain Injury: A Systematic Review and Meta-Analysis
+# Meta-analysis
 
 Following Harrer, Cuijpers, Furukawa & Ebert, *Doing Meta-Analysis in R* (<https://doing-meta.guide>)
 
-Set working directory to code_meta/ and run `Rscript run_all.R`, which runs the scripts in order 01 -> 09 and writes the R and package versions to `../Data/meta_outputs/session_info.txt`. Each script can also be run on its own, in order.
+Set working directory to code_meta/ and run `Rscript run_all.R`, which runs the scripts in order 01 -> 10 and writes the R and package versions to `../Data/meta_outputs/session_info.txt`. Each script can also be run on its own, in order.
 
-Inputs come from `../Data/study_data/effects_long.csv`. Outputs go to `../Data/meta_outputs/` (`meta_results.csv`, `corr_results.csv`) and `../Data/figures/`, Paths are defined once in `config.R`, which creates the directories if they are missing.
+Inputs come from `../Data/study_data/effects_long.csv`; script 10 reads `meandiff_long.csv` instead. Outputs go to `../Data/meta_outputs/` (`meta_results.csv`, `corr_results.csv`) and `../Data/figures/`, Paths are defined once in `config.R`, which creates the directories if they are missing.
 
-R version: 4.5.0, `meta` 8.3.0
+R version: 4.5.0, `meta` 8.3.0, `metamedian` 1.2.2
 
 ## Data organization
 ```         
@@ -21,6 +21,7 @@ R version: 4.5.0, `meta` 8.3.0
     |-- 07_leave_one_out.R
     |-- 08_forest_etiology.R
     |-- 09_forest_unpooled.R
+    |-- 10_median_group_comparisons.R
     |-- run_all.R
     |-- config.R
     |-- forest_lib.R
@@ -44,10 +45,11 @@ R version: 4.5.0, `meta` 8.3.0
 | `06_forest_sensitivity_corr.R` | Correlation forests, overlaps re-included |
 | `07_leave_one_out.R` | Leave one out analysis to check robustness of results |
 | `08_forest_etiology.R` | Primary cells grouped by diagnosis, tests for subgroup differences by diagnosis and by target, and pooling within a diagnosis where it reaches 3 studies |
-| `09_forest_unpooled.R` | Odds ratios from cells below the 3-study floor, shown study by study without pooling |
+| `09_forest_unpooled.R` | Odds ratios that couldn't be pooled, shown study by study without pooling |
+| `10_median_group_comparisons.R` | Studies reporting each outcome group's median (IQR) or mean (SD), pooled as differences of medians (worse minus better outcome) |
 | `run_all.R` | Runs 01 to 09 in order and records the session information |
 
-Requires R \>= 4.3 with `meta`. Neither `metafor` nor the guide's companion package `dmetar` is used.
+Requires R \>= 4.3 with `meta` and `metamedian`. `metamedian` loads `metafor` as a dependency, but all pooling is done with `meta`.
 
 ``` bash
 Rscript 01_pool_odds_ratios.R
@@ -59,6 +61,7 @@ Rscript 06_forest_sensitivity_corr.R
 Rscript 07_leave_one_out.R
 Rscript 08_forest_etiology.R
 Rscript 09_forest_unpooled.R
+Rscript 10_median_group_comparisons.R
 ```
 
 or, equivalently, `Rscript run_all.R`.
@@ -75,6 +78,7 @@ Written to `../Data/figures/`:
 | `figS_corr_sens_<metric>.png` | Correlations forest plots, overlapping cohorts re-included |
 | `forest_etiology_OR_<outcome>_<metric>.png` | Primary cells with diagnoses as subgroups, with the test for subgroup differences |
 | `forest_unpooled_<outcome>_<cell>.png` | Cells below the 3-study floor, one estimate per study, no pooled estimate; `forest_unpooled_panels.csv` lists the panel order and titles |
+| `forest_mediandiff_<outcome>_<metric>.png` | Pooled differences of medians between worse- and better-outcome groups |
 
 ## Results files
 
@@ -87,6 +91,8 @@ Written to `../Data/meta_outputs/`:
 | `leave_one_out.csv` | Each primary cell refitted with each study omitted in turn |
 | `subgroup_tests.csv` | Tests for subgroup differences by diagnosis and by target |
 | `etiology_results.csv` | Pooled odds ratios within a single diagnosis |
+| `median_diff_results.csv` | Pooled differences of medians per cell |
+| `median_diff_study_values.csv` | Study-level group summaries, differences of medians, standard errors and weights |
 | `session_info.txt` | R and package versions, written by `run_all.R` |
 
 Odds ratios for percentage-of-monitoring-time metrics are reported per 10% of monitoring time (`OR_UNIT` in `config.R`); estimates are stored per 1% in `effects_long.csv`.
