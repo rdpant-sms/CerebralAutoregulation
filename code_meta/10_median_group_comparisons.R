@@ -14,9 +14,7 @@ suppressMessages(library(metamedian))
 source("config.R")
 source("forest_lib.R")
 
-md  <- read.csv(paste0(STUDY_DATA, "meandiff_long.csv"), check.names = FALSE, stringsAsFactors = FALSE)
-cov <- read.csv(paste0(STUDY_DATA, "covidence_consensus.csv"), check.names = FALSE, stringsAsFactors = FALSE)
-cov$`Study ID` <- trimws(cov$`Study ID`)
+md <- read.csv(paste0(STUDY_DATA, "meandiff_long.csv"), check.names = FALSE, stringsAsFactors = FALSE)
 
 # Cells to try, in the order they are written out. deltaP is not pooled because
 # studies define it as CPP - CPPopt, CPPopt - CPP or |CPP - CPPopt|.
@@ -31,11 +29,7 @@ CELLS <- list(
   list(outcome = "mortality",    metric = "pct_above")
 )
 
-# Outcomes measured at discharge are not pooled (Kevci 2025).
-discharge <- cov$`Study ID`[cov$`Follow-up duration` == "Other: Discharge"]
-
 UNIT <- c(pct_below = "percentage points", pct_above = "percentage points", Popt = "mm Hg")
-N_WORSE_COLUMN <- c(mortality = "number of non-survivors N", poor_outcome = "number with poor outcome N")
 
 num <- function(x) suppressWarnings(as.numeric(trimws(x)))
 
@@ -65,15 +59,16 @@ group_text <- function(v) {
 }
 
 # One row per study. Group 1 = worse outcome, group 2 = better outcome.
+# Outcomes measured at discharge are not pooled (Kevci 2025).
 cell_rows <- function(cell) {
   d <- md[md$target == "CPPopt" & md$outcome == cell$outcome &
-          md$exposure_metric == cell$metric & !(md$study_id %in% discharge), ]
+          md$exposure_metric == cell$metric & md$follow_up != "Other: Discharge", ]
 
   rows <- NULL
   for (i in seq_len(nrow(d))) {
     r <- d[i, ]
     n_total  <- num(r$n_total)
-    n_worse  <- num(cov[cov$`Study ID` == r$study_id, N_WORSE_COLUMN[cell$outcome]][1])
+    n_worse  <- num(r$n_worse)
     n_better <- n_total - n_worse
     w <- group_values(r$stat_type, r$worse_value,  r$worse_disp,  r$worse_disp_low,  r$worse_disp_high,  n_worse)
     b <- group_values(r$stat_type, r$better_value, r$better_disp, r$better_disp_low, r$better_disp_high, n_better)
@@ -81,6 +76,7 @@ cell_rows <- function(cell) {
     rows <- rbind(rows, data.frame(
       study_id = r$study_id, target = r$target, etiology = r$etiology,
       outcome_def = r$outcome_def, stat_type = r$stat_type, threshold = r$threshold,
+      dataset = r$dataset_cluster,
       n.g1 = n_worse,  med.g1 = w["med"], q1.g1 = w["q1"], q3.g1 = w["q3"], mean.g1 = w["mean"], sd.g1 = w["sd"],
       n.g2 = n_better, med.g2 = b["med"], q1.g2 = b["q1"], q3.g2 = b["q3"], mean.g2 = b["mean"], sd.g2 = b["sd"],
       worse_text = group_text(w), better_text = group_text(b),
@@ -94,8 +90,7 @@ cell_rows <- function(cell) {
   rows <- rows[has_spread, ]
 
   # One study per cohort: stop if two studies in a cell come from the same dataset
-  datasets <- trimws(cov$`Dataset Cluster`[match(rows$study_id, cov$`Study ID`)])
-  if (any(duplicated(datasets))) stop("overlapping cohorts in ", cell$outcome, " ", cell$metric)
+  if (any(duplicated(rows$dataset))) stop("overlapping cohorts in ", cell$outcome, " ", cell$metric)
 
   rows$Target     <- rows$target
   rows$Etiology   <- rows$etiology
