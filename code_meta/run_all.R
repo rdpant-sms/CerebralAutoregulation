@@ -9,13 +9,14 @@
 scripts <- c(
   "01_pool_odds_ratios.R",       # pooled odds ratios          -> meta_results.csv
   "02_pool_correlations.R",      # pooled correlations         -> corr_results.csv
-  "03_forest_primary_OR.R",      # primary OR forests          (Figures 3, 5, 6)
-  "04_forest_sensitivity_OR.R",  # overlapping cohorts re-included (eFigure 1)
-  "05_forest_primary_corr.R",    # correlation forests         (eFigure 4)
-  "06_forest_sensitivity_corr.R",# correlation forests, overlaps re-included (eFigure 5)
+  "03_forest_primary_OR.R",      # primary OR forests          (Figures 3, 4, 5)
+  "04_forest_sensitivity_OR.R",  # overlapping cohorts re-included (eFigure 3)
+  "05_forest_primary_corr.R",    # correlation forests         (eFigure 5)
+  "06_forest_sensitivity_corr.R",# correlation forests, overlaps re-included (eFigure 6)
   "07_leave_one_out.R",          # leave-one-out               -> leave_one_out.csv
-  "08_forest_etiology.R",        # by diagnosis (eFigure 2)    -> subgroup_tests.csv, etiology_results.csv
-  "09_forest_unpooled.R"         # cells below MIN_K, unpooled (eFigure 3)
+  "08_forest_etiology.R",        # by diagnosis (eFigure 4)    -> subgroup_tests.csv, etiology_results.csv
+  "09_forest_unpooled.R",        # cells below MIN_K, unpooled (eFigure 1)
+  "10_median_group_comparisons.R" # group-level differences of medians (eFigure 7)
 )
 
 for (script in scripts) {
